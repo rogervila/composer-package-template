@@ -16,10 +16,10 @@ before_script:
 
 script:
   - vendor/bin/phpunit
-  # - sonar-scanner -Dsonar.projectKey=provably-fair -Dsonar.sources=. -Dsonar.exclusions='index.php, vendor/**, tests/**' -Dsonar.php.tests.reportPath=junit-logfile.xml -Dsonar.php.coverage.reportPaths=clover.xml
+  - sonar-scanner -Dsonar.projectKey=provably-fair -Dsonar.sources=. -Dsonar.exclusions='vendor/**, tests/**' -Dsonar.php.tests.reportPath=junit-logfile.xml -Dsonar.php.coverage.reportPaths=clover.xml
 
-# addons:
-#   sonarcloud:
-#     organization: "rogervila-github"
-#     token:
-#       secure: "GxFwORpZKa3gbAch+wxbR6xJrApYFhzC4Vp/yvijD5OyucU0dsYCpu4afaAMyUAccRV8jJp0iB3EVrxWcSKpGhJobd861SNDGN3jIKFDH3OxKyAcb7fUO4l1AdEzxLyu151AfJHmkU9vCbteSyYLpYGnUdU+yPApz9+2QhKVImsIycQtIsWG8ULtmZwhlHftK/qdiGWC55k28P5sqA+GLUEnI8RGiX2PlJ+Fc68jF24hAkC1W7fzMTA3q14zKT63SR0fOouO9v6HFu0VNj1yZQl4gOfHVw4A5BstmzYMQ62/KY8S0I5h3zsPF9Uud0zjXa/3iji1+KQSvZY8sRY9IkTGA0pTMviDr/djeDAI4KLqXNUonGIotWCb+muNxdIWvzmHoOs79zNLPskPLk3JEDbsB931aBupr8pnp0ovotLLSRhyuboke+k57T9K5T7ojCCa14vmHbcioZF+6lGlMulkUMCM4AHxJTve/rk/37UTomy/Z7F7n+eOmXJGKUzULs5evIE4bl7l5/qMbYQdS7GMWKRiFWhhFkRR7KY9DIjlXISb+r7bEPkT2RoZBEl13Qt95/4CBckTred1pYimhsf9XumRxEjxm24+ZHdu5moTgWcHM9SOjCHTFoUIJpfSJWhr4xxqiBuBozGWaU9bh+JywZoRA++///NE08AIpLI="
+addons:
+  sonarcloud:
+    organization: "rogervila-github"
+    token:
+      secure: "6EtODh4KA7RkejGI9Lq7C57BdzB/tfdqKujQU2I7YIDLSfwYkIRVFVGfo1ah9pfYI0RGRuPz5PWEZqnApbMMCnBPT6PutHf19DEbK1TFqcQR1JHp2AAuXB71wLiYyi0hdBBf+65k2UeiOnS0JSPyxAZuN/nVTMwxGVdVFDzp0q7XHeA7zL+jz5K3vkepbND+AWeHYklAelYEagIuO5eWEyZhZKR8nNh1M2JQnddqZBPMNJKZNK/YH9DJPYzaQIFPXaAXsQaBOLhSdHWEQNPcwswK0lL7fTskX2xQZ0cFTR/rZP7ZYXq2lVSNPJA659sjzfrrAlxKp7eER1Y+QuyNPW1bFJx8W73OkSRwB9QIB1zVdjR8H6TIRzk7j8TGsol6ISrxH76UNOdJh/UDQWcbAAL2x7OQm+l122DZzoGgrUsD7F9btc4riKNoIEIKPSmFTRXWzUIETa3uI0jCZKg+Z2+RQQTMn+pmm/i5javClphHd82LgwjvFfnRiND5fxzb0+0sZ72tltqUzOuWTTvhslUoTRF0ff5tX83VI5g/Jokrp+sNXZEcvXby7nnpvhwep8XzWrfQ+DjdAXvYUGtWVVeUGcyOnDEe/8Y0w5NDDBGn5UwxxmUeX78IDbbcli1W70+Bq5qN4/ocjvWdw/TaHykbKAXLGarnLVQAj/Q68Wg="
