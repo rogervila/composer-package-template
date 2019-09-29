@@ -4,7 +4,7 @@ namespace Example;
 
 class Example
 {
-    public function example(): bool
+    public function test(): bool
     {
         return true;
     }

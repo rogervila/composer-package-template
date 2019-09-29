@@ -9,6 +9,6 @@ final class ExampleTest extends TestCase
     {
         $example = new Example();
 
-        $this->assertTrue($example->example());
+        $this->assertTrue($example->test());
     }
 }
