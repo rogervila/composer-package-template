@@ -1,7 +1,6 @@
 <p align="center"><img width="200" src="https://image.flaticon.com/icons/svg/81/81847.svg" alt="Composer Package Template" /></p>
 
-[![Build Status](https://travis-ci.org/rogervila/composer-package-template.svg?branch=master)](https://travis-ci.org/rogervila/composer-package-template)
-[![Build status](https://ci.appveyor.com/api/projects/status/o26dqiqhrpgjt2wc/branch/master?svg=true)](https://ci.appveyor.com/project/roger-vila/composer-package-template/branch/master)
+[![Build Status](https://github.com/rogervila/composer-package-template/workflows/build/badge.svg)](https://github.com/rogervila/array-diff-multidimensional/actions)
 [![StyleCI](https://github.styleci.io/repos/211657121/shield?branch=master)](https://github.styleci.io/repos/211657121)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rogervila_composer-package-template&metric=alert_status)](https://sonarcloud.io/dashboard?id=rogervila_composer-package-template)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rogervila_composer-package-template&metric=coverage)](https://sonarcloud.io/dashboard?id=rogervila_composer-package-template)
