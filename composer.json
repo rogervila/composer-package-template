@@ -1,10 +1,10 @@
 {
     "name": "rogervila/composer-package-template",
+    "type": "library",
     "description": "PHP Composer package template",
     "keywords": [
         "composer package template"
     ],
-    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -13,10 +13,15 @@
         }
     ],
     "require": {
-        "php": "^7.2|^8.0"
+        "php": "^7.2 || ^8.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.0|^9.0"
+        "phpunit/phpunit": "^8.0 || ^9.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
     },
     "autoload": {
         "psr-4": {
@@ -27,11 +32,6 @@
         "psr-4": {
             "Tests\\Example\\": "tests/"
         }
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true
