@@ -1,4 +1,4 @@
-<p align="center"><img width="200" src="https://image.flaticon.com/icons/svg/81/81847.svg" alt="Composer Package Template" /></p>
+<p align="center"><img width="200" src="https://i.ibb.co/ZgBB9Zy/box.png" alt="Composer Package Template" /></p>
 
 [![Build Status](https://github.com/rogervila/composer-package-template/workflows/build/badge.svg)](https://github.com/rogervila/array-diff-multidimensional/actions)
 [![StyleCI](https://github.styleci.io/repos/211657121/shield?branch=master)](https://github.styleci.io/repos/211657121)
