@@ -37,3 +37,6 @@ jobs:
         run: vendor/bin/phpunit
         env:
           XDEBUG_MODE: coverage
+
+      - name: Run static analysis
+        run: vendor/bin/phpstan analyse src tests --level 8
