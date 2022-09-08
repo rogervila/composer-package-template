@@ -39,4 +39,4 @@ jobs:
           XDEBUG_MODE: coverage
 
       - name: Run static analysis
-        run: vendor/bin/phpstan analyse src tests --level 8 && vendor/bin/psalm
+        run: vendor/bin/phpstan analyse src tests --level 8 && vendor/bin/psalm --show-info=true
