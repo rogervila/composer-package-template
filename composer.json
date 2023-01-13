@@ -1,11 +1,11 @@
 {
     "name": "rogervila/composer-package-template",
-    "type": "library",
     "description": "PHP Composer package template",
+    "license": "MIT",
+    "type": "library",
     "keywords": [
         "composer package template"
     ],
-    "license": "MIT",
     "authors": [
         {
             "name": "Roger Vilà",
@@ -18,13 +18,10 @@
     "require-dev": {
         "phpstan/phpstan": "^1.0",
         "phpunit/phpunit": "^8.0 || ^9.0",
-        "vimeo/psalm": "^4.0"
+        "vimeo/psalm": "^4.0 || ^5.0"
     },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Example\\": "src/"
@@ -35,9 +32,16 @@
             "Tests\\Example\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
     "scripts": {
+        "static-analysis": [
+            "@php ./vendor/bin/phpstan analyse src tests --level 8",
+            "@php ./vendor/bin/psalm"
+        ],
         "test": [
             "@php ./vendor/bin/phpunit"
         ]
