@@ -34,9 +34,9 @@ jobs:
         run: composer update --prefer-dist --no-interaction
 
       - name: Execute tests
-        run: vendor/bin/phpunit
+        run: composer test
         env:
           XDEBUG_MODE: coverage
 
       - name: Run static analysis
-        run: vendor/bin/phpstan analyse src tests --level 8 && vendor/bin/psalm --show-info=true
+        run: composer static-analysis
