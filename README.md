@@ -1,6 +1,6 @@
 <p align="center"><img width="200" src="https://i.ibb.co/ZgBB9Zy/box.png" alt="Composer Package Template" /></p>
 
-[![Build Status](https://github.com/rogervila/composer-package-template/workflows/build/badge.svg)](https://github.com/rogervila/composer-package-template/actions)
+[![Status](https://github.com/rogervila/composer-package-template/workflows/test/badge.svg)](https://github.com/rogervila/composer-package-template/actions)
 [![StyleCI](https://github.styleci.io/repos/211657121/shield?branch=main)](https://github.styleci.io/repos/211657121)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rogervila_composer-package-template&metric=alert_status)](https://sonarcloud.io/dashboard?id=rogervila_composer-package-template)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rogervila_composer-package-template&metric=coverage)](https://sonarcloud.io/dashboard?id=rogervila_composer-package-template)
